@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hi</h1>
-      <h2>Tim La</h2>
+    <div className='homepage_container'>
+      <div className='navbar_container'></div>
+      <Row className='homepage_section'>
+        <Col className='homepage_column column_left'></Col>
+        <Col className='homepage_column column_right'>
+          <div className='homepage_image'></div>
+        </Col>
+      </Row>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

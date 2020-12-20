@@ -1,0 +1,47 @@
+.homepage_container {
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar_container {
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  height: 10vh;
+}
+
+.homepage_section {
+  height: 90vh;
+}
+
+.homepage_column {
+  /* border: 1px solid black; */
+}
+
+.column_left {
+}
+
+.column_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage_image {
+  /* border: 1px solid black; */
+  height: 650px;
+  width: 650px;
+  background-image: url('./images/thinking.png');
+  background-size: cover;
+  background-position: center;
+}
