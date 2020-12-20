@@ -7,7 +7,11 @@ const App = () => {
     <div className='homepage_container'>
       <div className='navbar_container'></div>
       <Row className='homepage_section'>
-        <Col className='homepage_column column_left'></Col>
+        <Col className='homepage_column column_left'>
+          <h1>
+            How Can We Work <span>Together</span> to Accomplish Our Goals
+          </h1>
+        </Col>
         <Col className='homepage_column column_right'>
           <div className='homepage_image'></div>
         </Col>

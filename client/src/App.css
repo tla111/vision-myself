@@ -17,24 +17,38 @@
 
 .navbar_container {
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  height: 10vh;
+  /* background-color: black; */
+  height: 7vh;
 }
 
 .homepage_section {
-  height: 90vh;
+  height: 93vh;
 }
 
 .homepage_column {
   /* border: 1px solid black; */
-}
-
-.column_left {
-}
-
-.column_right {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.column_left {
+  /* border: 1px solid black; */
+}
+
+.column_left h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 65px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+
+span {
+  color: black;
+}
+
+.column_right {
 }
 
 .homepage_image {
