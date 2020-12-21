@@ -1,8 +1,8 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/homescreen/Home';
+import Dashboard from './components/dashboard/Dashboard';
 
 const App = () => {
   return (
@@ -10,6 +10,9 @@ const App = () => {
       <Switch>
         <Route exact path='/'>
           <Home />
+        </Route>
+        <Route exact path='/statistics'>
+          <Dashboard />
         </Route>
       </Switch>
     </Router>
