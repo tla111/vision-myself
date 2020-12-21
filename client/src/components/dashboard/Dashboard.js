@@ -44,7 +44,7 @@ const Dashboard = () => {
             </div>
             <div className='dashboard_boxes card_stat card_stat_2'>
               <h2>
-                " Goals that are written are concrete and motivational. Making
+                "Goals that are written are concrete and motivational. Making
                 progress toward written goals increases feelings of success and
                 well-being."
               </h2>

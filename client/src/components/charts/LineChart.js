@@ -6,11 +6,11 @@ const LineChart = () => {
 
   const chart = () => {
     setChartData({
-      labels: ['1st Year', '2nd Year', '3rd Year', '4th Year', '5th Year'],
+      labels: ['1st Quarter', '2nd Quarter', '3rd Quarter', '4th Quarter'],
       datasets: [
         {
-          label: '5 Year Plan Forecast - Setting Goals',
-          data: [10, 20, 40, 80, 160],
+          label: '1 Year of Setting Goals - # of Tasks Completed',
+          data: [12, 20, 40, 80],
           backgroundColor: ['rgba(0, 170, 255, 0.8)'],
           borderWidth: 5,
         },
