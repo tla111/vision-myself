@@ -9,7 +9,7 @@ const LineChart = () => {
       labels: ['1st Year', '2nd Year', '3rd Year', '4th Year', '5th Year'],
       datasets: [
         {
-          label: '5 Year Plan',
+          label: '5 Year Plan Forecast - Setting Goals',
           data: [10, 20, 40, 80, 160],
           backgroundColor: ['rgba(0, 170, 255, 0.8)'],
           borderWidth: 5,

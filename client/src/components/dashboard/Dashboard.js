@@ -26,20 +26,29 @@ const Dashboard = () => {
           </Col>
           <Col className='column_sections column_two'>
             <div className='dashboard_boxes'>
-              <div className='chart_header'></div>
+              <div className='chart_header chart_header_1'></div>
               <BarChart />
             </div>
-            <div className='dashboard_boxes'>
-              <div className='chart_header'></div>
+            <div className='dashboard_boxes card_stat card_stat_1'>
+              <h2>
+                "The study found that the 14% who have goals are 10x more
+                successful than those without goals"
+              </h2>
+              <cite>-Harvard Business Study </cite>
             </div>
           </Col>
           <Col className='column_sections column_three'>
             <div className='dashboard_boxes'>
-              <div className='chart_header'></div>
+              <div className='chart_header chart_header_2'></div>
               <LineChart />
             </div>
-            <div className='dashboard_boxes'>
-              <div className='chart_header'></div>
+            <div className='dashboard_boxes card_stat card_stat_2'>
+              <h2>
+                " Goals that are written are concrete and motivational. Making
+                progress toward written goals increases feelings of success and
+                well-being."
+              </h2>
+              <cite>-Psychology Today </cite>
             </div>
           </Col>
         </Row>
