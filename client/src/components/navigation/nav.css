@@ -1,0 +1,13 @@
+.link_buttons {
+  margin: 10px;
+  width: 150px;
+  background-color: white;
+}
+
+.link_buttons:hover {
+  background-color: turquoise;
+}
+
+.link_buttons a {
+  text-decoration: none;
+}
