@@ -1,13 +1,16 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './goals.css';
+import DisplayGoals from './DisplayGoals';
 import Form from './Form';
 
 const Goals = () => {
   return (
     <div className='goals_container'>
       <Row className='goals_row_container'>
-        <Col>Posts</Col>
+        <Col>
+          <DisplayGoals />
+        </Col>
         <Col>
           <Form />
         </Col>
