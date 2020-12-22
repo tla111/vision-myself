@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import FileBase from 'react-file-base64';
+import { useDispatch } from 'react-redux';
+import { createPost } from '../../actions/posts';
 import './form.css';
 
 const Form = () => {
+  const dispatch = useDispatch();
+
   const [postData, setPostData] = useState({
     author: '',
     title: '',
@@ -14,14 +18,14 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(postData);
+    dispatch(createPost(postData));
 
     clear();
   };
 
   const clear = () => {
     setPostData({
-      creator: '',
+      author: '',
       title: '',
       message: '',
       tags: '',
@@ -33,10 +37,10 @@ const Form = () => {
     <>
       <form className='form_container' onSubmit={handleSubmit}>
         <h3>Create a Vision</h3>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
-            class='form-control'
+            className='form-control'
             aria-describedby='emailHelp'
             placeholder='Your Name'
             value={postData.author}
@@ -45,10 +49,10 @@ const Form = () => {
             }}
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
-            class='form-control'
+            className='form-control'
             placeholder='Title'
             value={postData.title}
             onChange={(e) => {
@@ -56,10 +60,10 @@ const Form = () => {
             }}
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
-            class='form-control'
+            className='form-control'
             placeholder='Message'
             value={postData.message}
             onChange={(e) => {
@@ -67,10 +71,10 @@ const Form = () => {
             }}
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
-            class='form-control'
+            className='form-control'
             placeholder='Hashtags'
             value={postData.tags}
             onChange={(e) => {
@@ -85,7 +89,7 @@ const Form = () => {
             setPostData({ ...postData, selectedFile: base64 })
           }
         />
-        <button type='submit' class='btn btn-primary btn-lg'>
+        <button type='submit' className='btn btn-primary btn-lg'>
           Submit
         </button>
       </form>
