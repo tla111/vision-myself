@@ -10,7 +10,7 @@ const DisplayGoals = () => {
   return !posts.length ? (
     <CircularProgress />
   ) : (
-    <div>
+    <div className='posts_container'>
       {posts.map((post) => (
         <div key={post._id}>
           <div className='card'>

@@ -3,19 +3,20 @@ import { Row, Col } from 'react-bootstrap';
 import './goals.css';
 import DisplayGoals from './DisplayGoals';
 import Form from './Form';
+import NavigationGoals from './NavigationGoals';
 
 const Goals = () => {
   return (
     <div className='goals_container'>
       <Row className='goals_row_container'>
-        <Col>
+        <Col className='goals_column'>
           <DisplayGoals />
         </Col>
-        <Col>
-          <Form />
-        </Col>
       </Row>
-      <Row className='footer_row_container'></Row>
+      <Row className='footer_row_container'>
+        <Form />
+        <NavigationGoals />
+      </Row>
     </div>
   );
 };

@@ -34,11 +34,11 @@ const Form = () => {
   return (
     <>
       <form className='form_container' onSubmit={handleSubmit}>
-        <h3>Create a Vision</h3>
+        <h4>Add a Goal to Your Vision Board</h4>
         <div className='form-group'>
           <input
             type='text'
-            className='form-control'
+            className='form-control input_text'
             aria-describedby='emailHelp'
             placeholder='Your Name'
             value={postData.author}
@@ -50,7 +50,7 @@ const Form = () => {
         <div className='form-group'>
           <input
             type='text'
-            className='form-control'
+            className='form-control input_text2'
             placeholder='Title'
             value={postData.title}
             onChange={(e) => {
@@ -61,7 +61,7 @@ const Form = () => {
         <div className='form-group'>
           <input
             type='text'
-            className='form-control'
+            className='form-control input_text3'
             placeholder='Message'
             value={postData.message}
             onChange={(e) => {
@@ -69,14 +69,17 @@ const Form = () => {
             }}
           />
         </div>
-        <FileBase
-          type='file'
-          multiple={false}
-          onDone={({ base64 }) =>
-            setPostData({ ...postData, selectedFile: base64 })
-          }
-        />
-        <button type='submit' className='btn btn-primary btn-lg'>
+        <div className='form_container_bottom'>
+          <FileBase
+            type='file'
+            multiple={false}
+            onDone={({ base64 }) =>
+              setPostData({ ...postData, selectedFile: base64 })
+            }
+            className='image_uploader'
+          />
+        </div>
+        <button type='submit' className='btn btn-primary'>
           Submit
         </button>
       </form>
