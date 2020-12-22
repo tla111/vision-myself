@@ -1,11 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { CircularProgress } from '@material-ui/core';
 import moment from 'moment';
 import './posts.css';
 
 const DisplayGoals = () => {
   const posts = useSelector((state) => state.postsReducer);
-  return (
+  return !posts.length ? (
+    <CircularProgress />
+  ) : (
     <div>
       {posts.map((post) => (
         <div key={post._id} className='post_container'>
