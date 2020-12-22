@@ -11,7 +11,6 @@ const Form = () => {
     author: '',
     title: '',
     message: '',
-    tags: '',
     selectedFile: '',
   });
 
@@ -28,7 +27,6 @@ const Form = () => {
       author: '',
       title: '',
       message: '',
-      tags: '',
       selectedFile: '',
     });
   };
@@ -68,17 +66,6 @@ const Form = () => {
             value={postData.message}
             onChange={(e) => {
               setPostData({ ...postData, message: e.target.value });
-            }}
-          />
-        </div>
-        <div className='form-group'>
-          <input
-            type='text'
-            className='form-control'
-            placeholder='Hashtags'
-            value={postData.tags}
-            onChange={(e) => {
-              setPostData({ ...postData, tags: e.target.value.split(',') });
             }}
           />
         </div>

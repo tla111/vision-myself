@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Card } from 'react-bootstrap';
 import { CircularProgress } from '@material-ui/core';
 import moment from 'moment';
 import './posts.css';
@@ -11,17 +12,15 @@ const DisplayGoals = () => {
   ) : (
     <div>
       {posts.map((post) => (
-        <div key={post._id} className='post_container'>
-          <h1>{post.author}</h1>
-          <h1>{post.title}</h1>
-          <h1>{post.message}</h1>
-          <h1>{moment(post.createdAt).fromNow()}</h1>
-          <h1>{post.tags.map((tag) => `#${tag} `)}</h1>
-          <img
-            src={post.selectedFile}
-            alt='posted_goals'
-            className='post_image'
-          ></img>
+        <div key={post._id}>
+          <div className='card'>
+            <img src={post.selectedFile} alt='image_goal' />
+            <div className='card_body'>
+              <h2>{post.title}</h2>
+              <p>{post.message}</p>
+              <h5>Posted By: {post.author}</h5>
+            </div>
+          </div>
         </div>
       ))}
     </div>
