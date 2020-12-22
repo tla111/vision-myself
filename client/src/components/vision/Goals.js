@@ -14,8 +14,12 @@ const Goals = () => {
         </Col>
       </Row>
       <Row className='footer_row_container'>
-        <Form />
-        <NavigationGoals />
+        <Col md={7}>
+          <Form />
+        </Col>
+        <Col>
+          <NavigationGoals />
+        </Col>
       </Row>
     </div>
   );

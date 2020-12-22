@@ -79,7 +79,7 @@ const Form = () => {
             className='image_uploader'
           />
         </div>
-        <button type='submit' className='btn btn-primary'>
+        <button type='submit' className='btn'>
           Submit
         </button>
       </form>
