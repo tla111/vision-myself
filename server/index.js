@@ -1,15 +1,20 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const cors = require('cors');
+import express from 'express';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
+
+import postRoutes from './routes/posts.js';
 
 const app = express();
 
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
+
+//Posts
+app.use('/posts', postRoutes);
 
 //Check to see if server is running
 app.get('/', (req, res) => {

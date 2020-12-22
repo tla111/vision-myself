@@ -13,7 +13,7 @@ const BarChart = () => {
       ],
       datasets: [
         {
-          label: 'Percentage of Population - Setting Goals',
+          label: 'Percentage of U.S. Population - Setting Goals',
           data: [83, 14, 3],
           backgroundColor: [
             'rgba(255, 77, 106, 0.8)',

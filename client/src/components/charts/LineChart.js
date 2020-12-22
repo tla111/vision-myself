@@ -10,7 +10,7 @@ const LineChart = () => {
       datasets: [
         {
           label: '1 Year of Setting Goals - # of Tasks Completed',
-          data: [12, 20, 40, 80],
+          data: [10, 20, 40, 80],
           backgroundColor: ['rgba(0, 170, 255, 0.8)'],
           borderWidth: 5,
         },
