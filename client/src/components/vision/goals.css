@@ -7,7 +7,7 @@
 
 .goals_row_container {
   height: 75vh;
-  /* border: 1px solid greenyellow; */
+  /* border: 5px solid greenyellow; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,4 +33,5 @@
 }
 
 .goals_column {
+  background-color: 3px solid salmon;
 }

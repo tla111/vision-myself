@@ -1,17 +1,17 @@
 .posts_container {
-  height: 90vh;
-  /* border: 1px solid black; */
+  height: 80vh;
+  /* border: 3px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 .card {
   background: #fff;
-  width: 230px;
-  height: 350px;
+  width: 330px;
+  height: 450px;
   border-radius: 10px;
   margin: 16px;
   overflow: hidden;
