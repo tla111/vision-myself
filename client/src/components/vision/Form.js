@@ -34,7 +34,7 @@ const Form = () => {
   return (
     <>
       <form className='form_container' onSubmit={handleSubmit}>
-        <h4>Add a Goal to Your Vision Board</h4>
+        <h4>Add a Goal to the Vision Board</h4>
         <div className='form-group'>
           <input
             type='text'
